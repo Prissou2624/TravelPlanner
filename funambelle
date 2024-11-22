@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bijoux minimalistes pour Noël - Funambelle">
+    <title>Funambelle - Bijoux de Noël</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Général */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header .subheading {
+            font-size: 18px;
+            color: #9e9e9e;
+        }
+
+        /* Hero Section */
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            background: url('https://via.placeholder.com/1200x500?text=Bijoux+de+Noël') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        .hero-image h2 {
+            font-size: 48px;
+        }
+        .hero-image p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* Product Section */
+        .product-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .product-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .product-item .info {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .product-item h3 {
+            font-size: 24px;
+            color: #444;
+        }
+        .product-item p {
+            font-size: 14px;
+            color: #777;
+        }
+        .product-item a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #f89b7e;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .product-item a:hover {
+            background-color: #f9c5b6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-links {
+            margin-top: 15px;
+        }
+        footer .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .product-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Funambelle</h1>
+        <p class="subheading">Bijoux artisanaux pour les fêtes de fin d'année</p>
+    </header>
+
+    <!-- Hero Image Section -->
+    <div class="hero-image">
+        <div>
+            <h2>Fêtez Noël avec Élégance</h2>
+            <p>Découvrez nos bijoux raffinés, créés spécialement pour les fêtes.</p>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <h2>Nos Créations</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300?text=Collier+Noël" alt="Collier Noël">
+                <div class="info">
+                    <h3>Collier Élégant</h3>
+                    <p>Un collier minimaliste en plaqué or, parfait pour les fêtes.</p>
+                    <a href="#">Acheter maintenant</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300?text=Bague+Noël" alt="Bague Noël">
+                <div class="info">
+                    <h3>Bague en Argent</h3>
+                    <p>Une bague délicate en argent, idéale pour offrir en cadeau.</p>
+                    <a href="#">Acheter maintenant</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/300x300?text=Bracelet+Noël" alt="Bracelet Noël">
+                <div class="info">
+                    <h3>Bracelet Raffiné</h3>
+                    <p>Un bracelet en perles semi-précieuses, parfait pour les célébrations.</p>
+                    <a href="#">Acheter maintenant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Funambelle. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Pinterest</a>
+        </div>
+    </footer>
+
+</body>
+</html>
